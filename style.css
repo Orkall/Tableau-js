@@ -1,0 +1,10 @@
+table,th,td{
+    border : 1px solid #333;
+    border-collapse: collapse;
+}
+
+.hiden{
+    background-color: violet;
+    border-left: transparent;
+    border-bottom: transparent;
+}

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Tableau de devis</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="hiden"></td>
+            <th scope="col">tournage heure</th>
+            <th scope="col">résultat</th>
+            <th scope="col">montage heure</th>
+            <th scope="col">résultat</th>
+            <th scope="col">intervention</th>
+            <th scope="col">résultat</th>
+            <th scope="col">Total euro</th>
+           
+        </tr>
+        <tr>
+            <th scope="row">JOUR 1</th>
+            
+            <td ><select class='nHeureT' onchange="tournage();addCredit();">
+                <option value="0" selected>0 heure</option>
+                <option value="1">1 heure</option>
+                <option value="2">2 heure</option>
+                <option value="3">3 heure</option>
+                <option value="4">4 heure</option>
+                <option value="5">5 heure</option>
+                <option value="6">6 heure</option>
+                <option value="7">7 heure</option>
+                <option value="8">8 heure</option>
+                <option value="9">9 heure</option>
+                <option value="10">10 heure</option>
+                <option value="11">11 heure</option>
+                <option value="12">12 heure</option>
+            </select></td>
+            <td class='resultatT' >0 F</td>
+            <td><select class='nHeureM' onchange="montage();addCredit();">
+                <option value="0" selected>0 heure</option>
+                <option value="1">1 heure</option>
+                <option value="2">2 heure</option>
+                <option value="3">3 heure</option>
+                <option value="4">4 heure</option>
+                <option value="5">5 heure</option>
+                <option value="6">6 heure</option>
+                <option value="7">7 heure</option>
+                <option value="8">8 heure</option>
+                <option value="9">9 heure</option>
+                <option value="10">10 heure</option>
+                <option value="11">11 heure</option>
+                <option value="12">12 heure</option>
+            </select></td>
+            <td class='resultatM'>0 F</td>
+            <td class="creditI">0 F</td>
+            <td class="totalCredit">0 F</td>
+            <td class="totalEuro">0 €</td>
+        </tr>
+       
+    </table>
+    <input type="button" value="Ajouter" onclick="addRow();" />
+    
+</body>
+</html>
+
+
+
